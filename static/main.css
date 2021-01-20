@@ -1,0 +1,167 @@
+
+body { 
+    --color-1:#181F1C;
+    --color-2:#274029;
+    --color-3:#315C2B;
+    --color-4:#60712F;
+    --color-5:#9EA93F;
+
+    margin:0;
+    background-color:var(--color-2);
+} 
+
+#content{
+    text-align: center;
+}
+
+#home > a{ 
+    width: 100%;
+    text-decoration: none;
+    font-size: 40px;
+    display: inline;
+    text-align: center;
+    color: var(--color-5);
+    background-color: transparent;
+    transition: 0.3s;
+    border: none;
+    resize:none;
+}
+
+#home{    
+    display: block;
+    text-align: center;
+    background-color:var(--color-1);
+}
+
+path{
+    fill:var(--color-5);
+}
+
+#searchbar{
+    border: none;
+    background-color: var(--color-4);
+    color: var(--color-5);
+    text-align: center;
+    transition: 0.5s;
+    resize:none;
+    border-radius:10px;
+    font-size:32px;
+}
+
+#ui{
+    z-index: 200;
+    text-align:center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+video {
+    transition: 0.3s;
+}
+
+p {
+    color:var(--color-5);
+    font-size: 25px;
+    padding:0px;
+}
+
+#loading{
+    display: none;
+    position: absolute;
+    top: 55%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.cssload-container {
+    z-index:2;
+	position: relative;
+	width: 588px;
+	height: /*1351px;*/588px;
+	overflow: hidden;
+	margin:0px auto;
+}
+
+.cssload-container .cssload-item {
+    margin: auto;
+    z-index:1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 294px;
+	height: 294px;
+	background-color:var(--color-5);
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	box-shadow: 0 0 47px 6px rgba(0,0,0,0.25);
+		-o-box-shadow: 0 0 47px 6px rgba(0,0,0,0.25);
+		-ms-box-shadow: 0 0 47px 6px rgba(0,0,0,0.25);
+		-webkit-box-shadow: 0 0 47px 6px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0 0 47px 6px rgba(0,0,0,0.25);
+}
+
+.cssload-container .cssload-moon {
+	border-bottom: 59px solid var(--color-4);
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	animation: spin 1.45s ease infinite;
+		-o-animation: spin 1.45s ease infinite;
+		-ms-animation: spin 1.45s ease infinite;
+		-webkit-animation: spin 1.45s ease infinite;
+        -moz-animation: spin 1.45s ease infinite;
+    z-index:3;
+}
+
+
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes spin {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}

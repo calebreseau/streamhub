@@ -1,0 +1,10 @@
+<div id='watcher'>
+    <div id="player" class="webtor"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@webtor/player-sdk-js/dist/index.min.js" charset="utf-8"></script>
+    <br><select id='sources'>
+        {%for i in range (0,len)%}
+            <option value={{srcs[i][0]}}>{{srcs[i][1]}}</option>
+        {%endfor%}
+    </select>
+
+</div>

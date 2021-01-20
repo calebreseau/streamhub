@@ -1,0 +1,21 @@
+#watcher{
+    text-align: center;
+    width: 100%;
+}
+
+#player{
+    margin: auto;
+    width:70%;
+    display:inline;
+}
+
+#sources{
+    display:inline;
+    width: 40%;
+    border: none;
+}
+
+#sources option{
+    background: var(--color-4)!important;
+    color: var(--color-5)!important;
+}
