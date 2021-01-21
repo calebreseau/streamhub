@@ -9,7 +9,8 @@ def index():
 
 @app.route('/main/')
 def main():
-    return render_template('index.html')
+    cacheget=watcher.cache_get()
+    return render_template('index.html',cache=cacheget,len=len(cacheget))
 
 @app.route('/watch/')
 def watch():

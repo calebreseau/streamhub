@@ -2,7 +2,12 @@
 {%extends "layout.html"%}
 {% block content %}
 <script src='/static/index.js'></script>
-<div id='ui'><input type='text' id='searchbar' placeholder='search for a movie' wrap='off' rows=1></div>
+<div id='ui'><input type='text' id='searchbar' placeholder='search for a movie' wrap='off' rows=1 list='suggestions'>
+    <datalist id='suggestions'>
+        {%for i in range(0,len)%}
+            <option value='{{cache[i]}}'>{{cache[i]}}</option>
+        {%endfor%}
+    </datalist>
 <div id='content'>
     <div id='loading'>
         <div class="cssload-container">

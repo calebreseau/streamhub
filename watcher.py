@@ -24,6 +24,17 @@ def cache_save(title,ret):
         for el in ret:
             f.write(','.join(el)+'\n')
 
+def cache_get():
+    ret=[]
+    files=[]
+    if path.exists('cache'):
+        files=os.listdir('cache')
+    for file in files:
+        ret.append(file.replace('.cache',''))
+    print('cache :')
+    print(ret)
+    return ret
+
 def seek(title):
     ret=[]
     count=0
@@ -42,7 +53,7 @@ def seek(title):
                 parser.feed(str(r.content))
                 for i in range(0,len(globals()['urls'])):
                     count+=1
-                    ret.append([globals()['urls'][i],str(count)+'_'+title])
+                    ret.append([globals()['urls'][i],'#'+str(count)+': '+title+' from '+site])
         if len(ret)>0:
             cache_save(title,ret)
     return ret

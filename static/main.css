@@ -48,6 +48,12 @@ path{
     font-size:32px;
 }
 
+#searchbar[list]
+{
+  background-color: var(--color-4);
+  color: var(--color-5);
+}
+
 #ui{
     z-index: 200;
     text-align:center;
