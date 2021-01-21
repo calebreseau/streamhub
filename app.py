@@ -17,3 +17,5 @@ def watch():
     res=watcher.seek(request.args.get('title'))
     ret=render_template('watch.html',srcs=res,len=len(res))
     return ret
+
+app.run()
