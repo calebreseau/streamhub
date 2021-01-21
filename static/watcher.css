@@ -13,9 +13,9 @@
     display:inline;
     width: 40%;
     border: none;
-}
-
-#sources option{
-    background: var(--color-4)!important;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--color-4)!important;
     color: var(--color-5)!important;
 }

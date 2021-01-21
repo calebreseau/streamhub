@@ -4,7 +4,6 @@ import requests
 import json
 import os.path
 from os import path
-import pickle
 
 DATA_SOURCES=['www.oxtorrent.cc']
 globals().update({'urls': []})
@@ -19,6 +18,8 @@ def cache_load(title):
     return ret
 
 def cache_save(title,ret):
+    if not path.exists('cache'):
+        os.mkdir('cache')
     with open('cache/'+title+'.cache', 'w') as f:
         for el in ret:
             f.write(','.join(el)+'\n')
