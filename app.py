@@ -18,4 +18,4 @@ def watch():
     ret=render_template('watch.html',srcs=res,len=len(res))
     return ret
 
-app.run()
+app.run(host='0.0.0.0', port=8800, debug=True)
