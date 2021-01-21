@@ -5,7 +5,7 @@ import json
 import os.path
 from os import path
 
-DATA_SOURCES=['www.oxtorrent.cc']
+DATA_SOURCES=['www.oxtorrent.cc','torhd.cc']
 globals().update({'urls': []})
 
 
