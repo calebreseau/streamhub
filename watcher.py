@@ -44,7 +44,7 @@ def seek(title):
         for site in DATA_SOURCES:
             urls=[]
             try:
-                urls=search('"'+title+' torrent" site:'+site,num_results=2,lang='fr')
+                urls=search('"'+title+'" vf torrent site:'+site,num_results=2,lang='fr')
             except:
                 return []
             parser=Parser()

@@ -4,6 +4,7 @@ $('#sources').on('change', function() {
 });
 
 function initplayer(pmagnet){
+    $('#download').attr('href',$('#sources').val().split(',')[0]);
     $('#player').html('');
     window.webtor = window.webtor || [];
         window.webtor.push({
